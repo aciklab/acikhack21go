@@ -44,9 +44,16 @@ func main() {
 		fmt.Printf("%d ", sumof(i, i+1))
 	}
 	fmt.Println("")
+
 	s := sumoff()
 	for i := 0; i < 10; i++ {
 		fmt.Printf("%d ", s(i, i+1))
+	}
+	fmt.Println("")
+
+	f := fib()
+	for i := 0; i < 25; i++ {
+		fmt.Printf("%v ", f())
 	}
 }
 
