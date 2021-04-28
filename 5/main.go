@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"example.com/greetings"
+	"example.com/models"
 )
 
 func main() {
-	user := greetings.CreateUser(1, "Ali")
+	user := models.CreateUser(1, "Ali")
 	fmt.Println(user.Id, user.Name)
 	user.PrintName()
 	user.ChangeName("Veli")
@@ -21,7 +21,7 @@ func main() {
 	id, name := user.GetCredentials()
 	fmt.Println(id, name)
 
-	puser := greetings.CreatePuser(2, "Veli")
+	puser := models.CreatePuser(2, "Veli")
 	//fmt.Println(puser.id)
 	fmt.Println(puser.GetId(), puser.GetName())
 }
