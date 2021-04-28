@@ -18,6 +18,11 @@ func main() {
 	user.ChangeName("Mehmet")
 	user2.PrintName()
 
+	user3 := *user
+	user3.PrintName()
+	user.ChangeName("Emin")
+	user3.PrintName()
+
 	id, name := user.GetCredentials()
 	fmt.Println(id, name)
 

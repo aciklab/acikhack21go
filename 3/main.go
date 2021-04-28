@@ -69,6 +69,7 @@ func sumoff() func(a int, b int) int {
 
 func fib() func() int {
 	a, b := 0, 1
+	fmt.Println("test")
 	return func() int {
 		a, b = b, a+b
 		return a

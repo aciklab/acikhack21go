@@ -18,10 +18,16 @@ func main() {
 	fmt.Println(isim)
 
 	///////
+	arr := [2]int{1, 2}
+	fmt.Println(arr)
+
 	var numbers []int                     // slice
 	numbers = append(numbers, 2)          // slice boş tanımlanırsa append çalışır
 	numbers = append(numbers, 3, 4, 5, 6) // birden fazla eleman append leyebiliriz
 	fmt.Println(numbers)
+
+	fmt.Println(reflect.TypeOf(arr))
+	fmt.Println(reflect.TypeOf(numbers))
 
 	names := make([]string, 2)
 	names = append(names, "Ali")
@@ -41,6 +47,7 @@ func main() {
 		"Ali":  1000,
 		"Veli": 2000,
 	}
+	fmt.Println(employeeSalary)
 	employeeSalary["Mehmet"] = 5000
 	fmt.Println(employeeSalary)
 
